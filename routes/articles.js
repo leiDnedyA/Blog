@@ -3,12 +3,13 @@ const router = express.Router();
 const Article = require("../models/Article");
 
 router.get('/', async (req, res) => {
-
+    console.log(`GET REQUEST AT: ${req.originalUrl}`)
     try {
-        const posts = await Article.find();
+        const posts = await Article.find().limit(12);
         res.json(posts);
     } catch (err) {
         res.json({ message: err });
+        console.log("couldn't find articles")
     }
 
 })

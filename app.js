@@ -28,6 +28,6 @@ mongoose.connect("mongodb+srv://aydab:" +
     console.log("Connected to database")
   })
 
-app.listen(process.env.PORT || PORT, () => {
-  console.log(`SERVER is listening on port: ${process.env.PORT || PORT}`);
+app.listen(process.env.PORT, () => {
+  console.log(`SERVER is listening on port: ${process.env.PORT}`);
 });
