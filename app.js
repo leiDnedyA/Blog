@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, "build")));
 
 //server & db connections
 mongoose.connect("mongodb+srv://aydab:" +
-  process.env.MONGO_ATLAS_PW +
+  "n0MynVKeFMHbRGrf" +
   "@cluster0.ew9vh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", ()=>{
     console.log("Connected to database")
   })
