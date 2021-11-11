@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const apiRoute = require("./routes/api");
 const app = express();
-const PORT = process.env.PORT;
+const PORT = /* process.env.PORT */ 3000;
 
 /*
 REMINDER: Switch port back to 3000 when deploying in nodemonj.json. Set to 3001 for testing
